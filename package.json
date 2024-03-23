@@ -1,0 +1,31 @@
+{
+  "name": "bookhive-server",
+  "version": "1.0.0",
+  "description": "Your Online Book Bazaar",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neelamnagarajgithub/BookHive-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neelamnagarajgithub/BookHive-Server/issues"
+  },
+  "homepage": "https://github.com/neelamnagarajgithub/BookHive-Server#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.2.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "stripe": "^14.22.0",
+    "twilio": "^5.0.1"
+  }
+}
