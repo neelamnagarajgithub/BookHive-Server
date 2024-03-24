@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors=require('cors');
 const BookRouter = require("./Routes/BookRoute");
+const StripeRouter = require("./Routes/stripe-route");
 const app = express();
 
 dotenv.config({ path: "./config.env" });
@@ -27,6 +28,7 @@ mongoose.connect(DB).then(() => {
 });
 
 app.use("/api/books", BookRouter);
+app.use("/api",StripeRouter);
 
 port = process.env.port;
 app.listen(port, () => {
