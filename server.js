@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://book-hive-silk.vercel.app/",
+    origin: "https://book-hive-silk.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   })
